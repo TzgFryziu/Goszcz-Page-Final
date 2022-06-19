@@ -1,3 +1,15 @@
+:root {
+    --red: #9a3231;
+    --darkred: #751312;
+}
+
 body {
     margin: 0;
+    min-height: 100vh;
+}
+
+#nav-info {
+    background-color: var(--darkred);
+    height: 2.5rem;
+    width: 100%;
 }
