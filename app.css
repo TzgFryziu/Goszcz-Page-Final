@@ -9,7 +9,9 @@ body {
 }
 
 #nav-info {
+    color: white;
     background-color: var(--darkred);
     height: 2.5rem;
-    width: 100%;
+    display: flex;
+    padding: 0 13%;
 }
