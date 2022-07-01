@@ -32,3 +32,26 @@ body {
 .kontrast {
     font-size: 0.8em;
 }
+
+main {
+    display: flex;
+    flex-direction: column;
+    width: 1100px;
+    padding: 2em;
+    border-radius: 2em;
+    background-color: rgb(207, 207, 207);
+}
+
+.title {
+    display: flex;
+    flex-direction: row;
+    gap: 2em;
+    width: 100%;
+}
+
+hr {
+    background-color: black;
+    align-self: center;
+    height: 1px;
+    width: 100%;
+}
