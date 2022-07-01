@@ -15,12 +15,22 @@ body {
     height: 2.5rem;
     display: flex;
     padding: 0 13%;
+    justify-content: flex-end;
 }
 
 
 #nav-info span {
     display: flex;
     align-items: center;
+    margin-right: 50px;
+}
+
+#nav-info span:hover {
+    cursor: pointer;
+}
+
+#nav-info span:last-child {
+    margin-right: 0%;
 }
 
 #nav-info svg {
@@ -31,4 +41,18 @@ body {
 
 .kontrast {
     font-size: 0.8em;
+}
+
+#nav-info button {
+    background-color: var(--darkred);
+    border: none;
+    height: 100%;
+    width: 2.5rem;
+    color: white;
+    font-size: 1.2rem;
+}
+
+#nav-info button:hover {
+    cursor: pointer;
+    background-color: #58100f;
 }
