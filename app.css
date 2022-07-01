@@ -17,13 +17,18 @@ body {
     padding: 0 13%;
 }
 
-#phone-icon {
+
+#nav-info span {
+    display: flex;
+    align-items: center;
+}
+
+#nav-info svg {
     height: 60%;
     fill: white;
     margin-right: 10px;
 }
 
-#nav-info span {
-    display: flex;
-    align-items: center;
+.kontrast {
+    font-size: 0.8em;
 }
