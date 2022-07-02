@@ -2,6 +2,12 @@
     --red: #9a3231;
     --darkred: #751312;
     --grey: rgb(207, 207, 207);
+    --logoYoutube: #ff0000;
+    --logoFacebook: #4267b2;
+    --logoInstagram: #8a3ab9;
+    --normalgrey: #878787;
+    --lightgrey: #cfcfcf;
+    --darkblue: #182546;
 }
 
 body {
@@ -10,7 +16,14 @@ body {
     font-family: 'Ubuntu', sans-serif;
 }
 
-h1, h2, h3, h4, h5, h6, p, span {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span {
     margin: 0;
 }
 
@@ -23,7 +36,7 @@ h1, h2, h3, h4, h5, h6, p, span {
     background-color: var(--darkred);
 }
 
-#nav1 > div {
+#nav1>div {
     display: flex;
     justify-content: flex-end;
     width: 100%;
@@ -80,7 +93,7 @@ h1, h2, h3, h4, h5, h6, p, span {
     width: 100%;
 }
 
-#main-nav > div {
+#main-nav>div {
     width: 100%;
     max-width: 1200px;
     height: 100px;
@@ -192,7 +205,8 @@ main {
     font-size: 1.5em;
 }
 
-.aText p, .aText a {
+.aText p,
+.aText a {
     font-size: 1.1em;
 }
 
