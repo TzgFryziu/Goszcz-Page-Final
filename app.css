@@ -211,16 +211,13 @@ main {
 }
 
 .aText a {
-    width: auto;
-    display: flex;
+    width: max-content;
     align-items: center;
     gap: 0.35em;
-}
-
-.aText a {
     text-decoration: none;
     color: red;
 }
+
 
 .aText svg {
     fill: red;
@@ -237,135 +234,149 @@ main {
 }
 
 /* FOOTER */
+/* FOOTER */
+/* FOOTER */
+/* FOOTER */
+/* FOOTER */
+/* FOOTER */
+/* FOOTER */
+/* FOOTER */
 
-/* footer {
+.footerMain {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: white;
-}
-
-footer > div {
-    width: 100%;
-    max-width: 1200px;
-} */
-
-footer {
-    display: flex;
-    padding: 40px 20%;
-    height: 160px;
-    max-width: 1100px;
-}
-
-#footer-left {
-    width: 65%;
-    height: 100%;
-    border-right: 1px solid var(--lightgrey);
-}
-
-#footer-heading {
-    height: 50%;
-    display: flex;
-    align-items: center;
+    flex-wrap: wrap;
     color: var(--darkblue);
     justify-content: center;
-}
-
-#footer-heading div {
-    margin-left: 15px;
+    margin-top: 10px;
+  }
+  
+  .footerMainLeft {
     display: flex;
     flex-direction: column;
+    align-items: right;
+    align-content: right;
+    flex-wrap: wrap;
+    padding: 40px;
+    border-right: 1px solid var(--lightgrey);
+  }
+  
+  .ftrLeftSchoolName {
+    display: flex;
+    justify-content: center;
     align-items: center;
-}
-
-#footer-heading svg {
-    height: 80%;
+    align-content: center;
+    padding-bottom: 30px;
+    gap: 10px;
+  }
+  
+  .ftrLeftSchoolLogo svg {
+    height: 50px;
+    width: 50px;
     fill: var(--darkblue);
-}
-
-#footer-heading span {
-    display: block;
-}
-
-#footer-heading span:first-child {
-    font-weight: bolder;
-}
-
-#footer-bottom {
-    height: 50%;
+  }
+  
+  .ftrLeftSchoolName a {
+    -o-transition: -o-transform ease-out 0.1s, background 0.2s;
+    -ms-transition: -ms-transform ease-out 0.1s, background 0.2s;
+    -webkit-transition: -webkit-transform ease-out 0.1s, background 0.2s;
+    transition: transform ease-out 0.1s, background 0.2s;
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+  }
+  
+  .ftrLeftSchoolName a:hover {
+    -o-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+  
+  .ftrLeftContact {
     display: flex;
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+    gap: 30px;
     color: var(--normalgrey);
-    justify-content: space-evenly;
-}
-
-.footer-info svg {
-    height: 40%;
-    fill: var(--normalgrey);
-    margin-right: 10px;
-}
-
-.footer-info {
+  }
+  
+  .ftrLeftContact a {
+    color: var(--normalgrey);
+  }
+  
+  .ftrLeftElement1,
+  .ftrLeftElement2,
+  .ftrLeftElement3 {
     display: flex;
-    align-items: center;
-}
-
-#footer-right {
-    width: 35%;
+  }
+  
+  .ftrLeftElement1Logo,
+  .ftrLeftElement2Logo,
+  .ftrLeftElement3Logo {
+    padding-right: 12px;
+  }
+  
+  .ftrLeftElement1Logo svg,
+  .ftrLeftElement2Logo svg,
+  .ftrLeftElement3Logo svg {
+    height: 35px;
+    width: 35px;
+    fill: var(--normalgrey);
+  }
+  
+  .footerMainRight {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
     height: 100%;
-
-}
-
-#footer-right div {
-    margin-left: 10%;
-}
-
-#social-top {
-    margin-top: 20px;
-    font-size: 1.1rem;
-}
-
-#social-top span {
-    display: block;
-    color: var(--darkblue);
-}
-
-#social-top span {
-    font-weight: bolder;
-}
-
-#social-top span:last-child {
-    font-weight: normal;
-}
-
-#social-bot {
-    height: 80%;
+    padding: 45px;
+  }
+  
+  .ftrRightText {
+    padding-bottom: 20px;
+  }
+  
+  .ftrRightLogoSection {
     display: flex;
+    justify-content: space-between;
     align-items: center;
-}
-
-#social-bot svg {
+    gap: 15px;
+  }
+  
+  .ftrRightLogoSection div svg path {
     fill: var(--normalgrey);
-    height: 40px;
-    margin-left: 13%;
-    transition: 200ms;
-}
-
-#social-bot svg:hover {
-    cursor: pointer;
-}
-
-#social-bot svg:hover:nth-child(1) {
-    fill: var(--logoFacebook);
-}
-
-#social-bot svg:hover:nth-child(2) {
-    fill: var(--logoYoutube);
-}
-
-#social-bot svg:hover:nth-child(3) {
-    fill: var(--logoInstagram);
-}
-
-#social-bot svg:first-child {
-    margin-left: 0;
-}
+  }
+  
+  @media only screen and (max-width: 965px) {
+    .footerMainLeft {
+      border-right: none;
+      border-bottom: 1px solid var(--lightgrey);
+    }
+  
+    .ftrRightText {
+      text-align: center;
+    }
+  
+    .ftrLeftName {
+      display: none;
+    }
+  }
+  
+  @media only screen and (max-width: 710px) {
+    .ftrLeftContact {
+      flex-direction: column;
+      align-items: center;
+      align-content: center;
+      justify-content: center;
+    }
+  
+    .footerMain {
+      flex-direction: column;
+    }
+  
+    .ftrRightLogoSection {
+      justify-content: center;
+    }
+  }
