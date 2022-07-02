@@ -1,6 +1,12 @@
 :root {
     --red: #9a3231;
     --darkred: #751312;
+    --darkblue: #182546;
+    --lightgrey: #cfcfcf;
+    --normalgrey: #878787;
+    --logoYoutube: #ff0000;
+    --logoFacebook: #4267b2;
+    --logoInstagram: #8a3ab9;
 }
 
 body {
@@ -9,15 +15,18 @@ body {
     font-family: 'Ubuntu', sans-serif;
 }
 
-#nav-info {
-    color: white;
-    background-color: var(--darkred);
-    height: 2.5rem;
-    display: flex;
-    padding: 0 13%;
-    justify-content: flex-end;
+#nav-bg {
+    background-color: var(--red);
 }
 
+#nav-info {
+    color: white;
+    height: 2.5rem;
+    display: flex;
+    padding: 0 20%;
+    justify-content: flex-end;
+    max-width: 1100px;
+}
 
 #nav-info span {
     display: flex;
@@ -67,15 +76,171 @@ hr {
 }
 
 #nav-info button {
-    background-color: var(--darkred);
+    background-color: var(--red);
     border: none;
     height: 100%;
     width: 2.5rem;
     color: white;
     font-size: 1.2rem;
+    transition: 200ms;
 }
 
 #nav-info button:hover {
     cursor: pointer;
-    background-color: #58100f;
+    background-color: #692221;
+}
+
+#main-nav {
+    height: 100px;
+    padding: 0 20%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1100px;
+}
+
+#main-nav svg {
+    height: 80%;
+    fill: var(--darkblue);
+    transition: 200ms;
+}
+
+#main-nav svg:hover {
+    fill: var(--darkred);
+    cursor: pointer;
+}
+
+.nav-item {
+    font-weight: bolder;
+    margin-right: 50px;
+    transition: 200ms;
+}
+
+.nav-item:last-child {
+    margin-right: 0%;
+}
+
+.nav-item:hover {
+    color: var(--darkred);
+    cursor: pointer;
+}
+
+footer {
+    padding: 40px 20%;
+    height: 160px;
+    display: flex;
+    max-width: 1100px;
+}
+
+#footer-left {
+    width: 65%;
+    height: 100%;
+    border-right: 1px solid var(--lightgrey);
+}
+
+#footer-heading {
+    height: 50%;
+    display: flex;
+    align-items: center;
+    color: var(--darkblue);
+    justify-content: center;
+}
+
+#footer-heading div {
+    margin-left: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#footer-heading svg {
+    height: 80%;
+    fill: var(--darkblue);
+}
+
+#footer-heading span {
+    display: block;
+}
+
+#footer-heading span:first-child {
+    font-weight: bolder;
+}
+
+#footer-bottom {
+    height: 50%;
+    display: flex;
+    color: var(--normalgrey);
+    justify-content: space-evenly;
+}
+
+.footer-info svg {
+    height: 40%;
+    fill: var(--normalgrey);
+    margin-right: 10px;
+}
+
+.footer-info {
+    display: flex;
+    align-items: center;
+}
+
+#footer-right {
+    width: 35%;
+    height: 100%;
+
+}
+
+#footer-right div {
+    margin-left: 10%;
+}
+
+#social-top {
+    margin-top: 20px;
+    font-size: 1.1rem;
+}
+
+#social-top span {
+    display: block;
+    color: var(--darkblue);
+}
+
+#social-top span {
+    font-weight: bolder;
+}
+
+#social-top span:last-child {
+    font-weight: normal;
+}
+
+#social-bot {
+    height: 80%;
+    display: flex;
+    align-items: center;
+}
+
+#social-bot svg {
+    fill: var(--normalgrey);
+    height: 40px;
+    margin-left: 13%;
+    transition: 200ms;
+}
+
+#social-bot svg:hover {
+    cursor: pointer;
+}
+
+#social-bot svg:hover:nth-child(1) {
+    fill: var(--logoFacebook);
+}
+
+#social-bot svg:hover:nth-child(2) {
+    fill: var(--logoYoutube);
+}
+
+#social-bot svg:hover:nth-child(3) {
+    fill: var(--logoInstagram);
+}
+
+#social-bot svg:first-child {
+    margin-left: 0;
 }
